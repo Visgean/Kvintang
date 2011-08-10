@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>{% block title %}Kvintang{% endblock %}</title>
+	
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<link rel="stylesheet" href="/static/style.css" type="text/css" />
+	<link rel="stylesheet" href="/static/jquery.autocomplete.css" type="text/css" />
+	<script type="text/javascript" src="/jquery.bgiframe.min.js"></script>
+	<script type="text/javascript" src="http://dev.jquery.com/view/trunk/plugins/autocomplete/lib/jquery.dimensions.js"></script>
+	<script type="text/javascript" src="/static/jquery.autocomplete.js"></script>
+	<script>
+		$(document).ready(function(){
+		  var data = new Array("" {% for term in terms %}, "{{term.englishVersion}}" {% endfor %}{% for term in terms %}, "{{term.czechVersion}}" {% endfor %});
+		$("#term").autocomplete(data);});
+	</script>
+		
+</head>
+<body>
+	<div id="searchbox">
+	<div id="logo">
+		<h1><a href="/">Kvintang:</a></h1>
+	</div>
+		<form action="/search" method="get">
+			<input type="text" name="term" id="term"/>
+			<input type="submit" value="Search" id="button">
+		</form>
+	</div>
+	<div class="menu">
+		<h1>Předměty:</h1>
+		<div id="subjects">
+			{% for subject in subjects %}
+				<a href="/subject/{{ subject.id }}"> {{subject}} </a><br>
+			{% endfor %}	
+		</div>
+		<h1>Kategorie:</h1>
+		<div id="tags">	
+			{% for tag in tags %}
+				<a href="/tag/{{ tag.id }}"> {{tag}} </a><br>
+			{% endfor %}
+		</div>
+
+		<div id="export">
+			<h1><a href="/export">Verze pro tisk</a></h1>
+		</div>
+	</div>
+	<div id=content>
+	{% block content %}
+	Tyto stránky vznikly jako slovník pro vnitřní potřeby Gymnázia a základní školy Open Gate. <br>
+	Cítíte-li potřebu kontakovat administrátora stránek, můžete tak učinit na adrese 06svoboda@opengate.cz . 
+	{% endblock %}
+	</div>
+</body>
+</html>

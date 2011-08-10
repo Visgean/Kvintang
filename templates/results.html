@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+
+{% block title %}{{title}}{% endblock %}
+
+{% block content %}
+	<h1>{{title}}:</h1>
+	{% for loot in loots %}
+		<div class="definition">
+		<h1>{{loot}}:</h1>
+	
+		means: {{loot.czechVersion}} <br>
+	
+		{% if loot.tags.all %}
+			Tags: 
+			{% for tag in loot.tags.all %}
+				<a href="/tag/{{ tag.id }}">{{tag}}</a> 
+			{% endfor %} <br>
+		{% endif %}
+	
+		Subject: <a href="/subject/{{ loot.subject.id }}"> {{loot.subject}}</a><br>
+	
+	
+		{% if loot.description %}
+			Notes: {{loot.description}}
+		{% endif %}
+		
+		</div>	
+	
+	{% endfor %}
+{% endblock %}

@@ -1,0 +1,11 @@
+<title>{{title}}</title> 
+<h1>{{title}}:</h1>
+{% for loot in loots %}
+	{{loot}} = {{loot.czechVersion}} 
+
+	{% if loot.description %}
+		| Notes: {{loot.description}}
+	{% endif %}
+	<br>
+{% endfor %}
+
