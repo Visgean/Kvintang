@@ -1,8 +1,8 @@
 import os
 import sys
 
-
-path = '/home/visgean'
+path = '/var/www/..'
+path = '/var/www/kvintang'
 if path not in sys.path:
     sys.path.append(path)
 

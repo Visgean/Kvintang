@@ -7,7 +7,7 @@ ADMINS = (
     ('svouloslav', 'svouloslav@gmail.com'),
 )
 
-currFolder = "/home/visgean/kvintang/"
+currFolder = "/home/visgean/scripty/kvintang/"
 
 
 
@@ -15,8 +15,8 @@ MANAGERS = ADMINS
 
 DATABASES = {
     'default': {
-        'ENGINE': 'mysql',	 # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': 'kvintang',                      # Or path to database file if using sqlite3.
+        'ENGINE': 'django.db.backends.sqlite3',	 # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
+        'NAME': currFolder + "kvintang.sqlite",                      # Or path to database file if using sqlite3.
         'USER': 'kvintang',                      # Not used with sqlite3.
         'PASSWORD': '3y4hTkWfXfgK',                  # Not used with sqlite3.
         'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
@@ -84,7 +84,7 @@ MIDDLEWARE_CLASSES = (
 ROOT_URLCONF = 'kvintang.urls'
 
 TEMPLATE_DIRS = (
-    "/home/visgean/kvintang/templates/"
+     currFolder + "templates/"
 )
 
 INSTALLED_APPS = (
