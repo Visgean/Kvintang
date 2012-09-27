@@ -7,7 +7,7 @@ ADMINS = (
     ('svouloslav', 'svouloslav@gmail.com'),
 )
 
-currFolder = "/home/visgean/scripty/kvintang/"
+currFolder = "/home/www/kvintang/"
 
 
 
