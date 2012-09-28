@@ -1,10 +1,8 @@
 import os
 import sys
 
-path = '/var/www/'
-path = '/var/www/kvintang'
-if path not in sys.path:
-    sys.path.append(path)
+sys.path.append('/var/www/')
+sys.path.append('/var/www/kvintang')
 
 
 os.environ['DJANGO_SETTINGS_MODULE'] = 'kvintang.settings'
