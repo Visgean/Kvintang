@@ -1,7 +1,7 @@
 import os
 import sys
 
-path = '/var/www/..'
+path = '/var/www/'
 path = '/var/www/kvintang'
 if path not in sys.path:
     sys.path.append(path)
