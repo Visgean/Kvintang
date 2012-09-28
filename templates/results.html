@@ -14,11 +14,11 @@
 		{% if loot.tags.all %}
 			Tags: 
 			{% for tag in loot.tags.all %}
-				<a href="/tag/{{ tag.id }}">{{tag}}</a> 
+				<a href="/kvintang/tag/{{ tag.id }}">{{tag}}</a> 
 			{% endfor %} <br>
 		{% endif %}
 	
-		Subject: <a href="/subject/{{ loot.subject.id }}"> {{loot.subject}}</a><br>
+		Subject: <a href="/kvintang/subject/{{ loot.subject.id }}"> {{loot.subject}}</a><br>
 	
 	
 		{% if loot.description %}

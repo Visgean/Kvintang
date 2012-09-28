@@ -22,9 +22,9 @@
 <body>
 	<div id="searchbox">
 	<div id="logo">
-		<h1><a href="/">Kvintang:</a></h1>
+		<h1><a href="/kvintang/">Kvintang:</a></h1>
 	</div>
-		<form action="/search" method="get">
+		<form action="/kvintang/search" method="get">
 			<input type="text" name="term" id="term"/>
 			<input type="submit" value="Search" id="button">
 		</form>
@@ -33,18 +33,18 @@
 		<h1>Předměty:</h1>
 		<div id="subjects">
 			{% for subject in subjects %}
-				<a href="/subject/{{ subject.id }}"> {{subject}} </a><br>
+				<a href="/kvintang/subject/{{ subject.id }}"> {{subject}} </a><br>
 			{% endfor %}	
 		</div>
 		<h1>Kategorie:</h1>
 		<div id="tags">	
 			{% for tag in tags %}
-				<a href="/tag/{{ tag.id }}"> {{tag}} </a><br>
+				<a href="/kvintang/tag/{{ tag.id }}"> {{tag}} </a><br>
 			{% endfor %}
 		</div>
 
 		<div id="export">
-			<h1><a href="/export">Verze pro tisk</a></h1>
+			<h1><a href="/kvintang/export">Verze pro tisk</a></h1>
 		</div>
 	</div>
 	<div id=content>

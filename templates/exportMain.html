@@ -8,13 +8,13 @@
 		<h2>Předmětu:</h2>
 		<div id="subjects">
 			{% for subject in subjects %}
-				<a href="/export/subject/{{ subject.id }}"> {{subject}} </a><br>
+				<a href="/kvintang/export/subject/{{ subject.id }}"> {{subject}} </a><br>
 			{% endfor %}	
 		</div>
 		<h2>Kategorie:</h2>
 		<div id="tags">	
 			{% for tag in tags %}
-				<a href="/export/tag/{{ tag.id }}"> {{tag}} </a><br>
+				<a href="/kvintang/export/tag/{{ tag.id }}"> {{tag}} </a><br>
 			{% endfor %}
 		</div>
 {% endblock %}
