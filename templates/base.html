@@ -7,11 +7,11 @@
 	<title>{% block title %}Kvintang{% endblock %}</title>
 	
 	<script src="http://code.jquery.com/jquery-latest.js"></script>
-	<link rel="stylesheet" href="/static/style.css" type="text/css" />
-	<link rel="stylesheet" href="/static/jquery.autocomplete.css" type="text/css" />
+	<link rel="stylesheet" href="/kvintang/static//style.css" type="text/css" />
+	<link rel="stylesheet" href="/kvintang/static//jquery.autocomplete.css" type="text/css" />
 	<script type="text/javascript" src="/jquery.bgiframe.min.js"></script>
 	<script type="text/javascript" src="http://dev.jquery.com/view/trunk/plugins/autocomplete/lib/jquery.dimensions.js"></script>
-	<script type="text/javascript" src="/static/jquery.autocomplete.js"></script>
+	<script type="text/javascript" src="/kvintang/static/jquery.autocomplete.js"></script>
 	<script>
 		$(document).ready(function(){
 		  var data = new Array("" {% for term in terms %}, "{{term.englishVersion}}" {% endfor %}{% for term in terms %}, "{{term.czechVersion}}" {% endfor %});
