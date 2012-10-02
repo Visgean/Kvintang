@@ -24,6 +24,7 @@ for filename in data_files:
 	for line in data.splitlines():
 		trm = line.split("\t")
 		term = Term(englishVersion=trm[0], czechVersion=trm[1], subject=subject)
+		term.save()
 		term.tags.add(tag)
 		term.save()
 		
