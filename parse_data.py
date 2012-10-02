@@ -12,7 +12,8 @@ from kvintang.dict.models import Subject, Tag, Term
 
 data_files = os.listdir("data")
 
-subject = Subject.objects.get(name="Math")
+subject = Subject(name="Math")
+subject.save()
 
 for filename in data_files:
 	with open("data/"+filename, "r") as ffile:
