@@ -1,0 +1,109 @@
+úhel	angle
+úsečka	segment
+přímka 	line
+polopřímka	ray
+bod	point
+množina	set
+poloměr	radius
+průměr	diameter
+kruh	circle
+kružnice	circumference
+čtverec	square
+obdélník	rectangle
+čtyřúhelník	quadrilateral
+trojúhelník	triangle
+mnohoúhelník	polygon
+pravidelný mnohoúhelník	regular polygon
+konvexní	convex
+nekonvexní	nonconvex
+hranol	prism
+koule	sphere
+kvádr	cuboid
+jehlan	pyramid
+kužel	cone
+parabola	parabola
+paraboloid	paraboloid
+hyperbola	hyperbola
+hyperboloid	hyperboloid
+elipsa	ellipsis
+elipsoid	ellipsoid
+krychle	cube
+náleží	is an element of
+nenáleží	is not an element of
+osa úhlu	angle bisection
+osa úsečky	line bisection
+úhlopříčka	diagonal
+průsečík	intersection
+rovnoběžný	parallel
+různoběžný	not parallel
+mimobežný	skew
+kosočtverec	rhombus
+rovnoběžník	parallelogram
+lichoběžník	trapezium
+rovnoběžky	parallel
+různoběžky	not parallel
+rovina	plane
+prostor	space
+přilehlá strana	adjacent side
+protilehlá	opposite
+přepona	hypotenuse
+Pythagorova věta	Pythagorean theorem
+Thaletova Kružnice	Thales' Circle
+Euklidova věta	Euclid's theorem
+souřadnice	coordinates
+vektor	vector
+normálový vektor	normal vector
+směrový vektor	direction vector
+rovnice přímky	Equation of a Line
+rovnice úsečky	equation of a segment
+parametrické vyjádření	parametric equation
+válec	cylinder
+souměrnost	symmetry
+pravidelný pětiúhelník	regular pentagon
+pravidelný šestiúhelník	regular hexagon
+řídící přímka	directrix
+osa x	x-axis
+osa y	y-axis
+obvod	perimetr
+obsah	area
+objem	volume
+povrch	surface
+sečna	bisector
+tečna	tangent
+kružnice opsaná 	circumscribed circle
+kružnice vepsaná	inscribed circle
+těžiště	center
+pravý úhel	right angle
+vzdálenost	distance
+délka	length
+řez	cross-section
+pravoúhlý trojúhelník	right triangle
+rovnostranný trojúhelník	equilateral triangle
+rovnoramený trojúhelník	isosceles triangle
+obecný trojúhelník	scalene
+posunutí	translation
+shodné zobrazení	identical display
+otočení	roation
+osová souměrnost	axial symmetry
+středová souměrnost	central symmetry
+výška	height
+podobnost	similarity
+čtyřstěn	tetrahedron
+komolý jehlan	truncated pyramid
+jehlan	pyramid
+ostroúhlý	acute
+tupoúhlý	obtuse
+vrchol	vertex
+strana	side
+stěna	face
+n-úhelník	polygon
+úhloměr	protractor
+pravítko	ruler
+kružítko	compasses
+jednotková kružnice	unit circle
+kuželosečka	conic sections
+útvar	shape
+těleso	solid
+plný úhel	perigon
+přímý úhel	straight angle
+trojúhelníková nerovnost	triangle inequality
