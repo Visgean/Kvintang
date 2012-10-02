@@ -24,9 +24,9 @@ def search(request, *args, **kwargs):
 
     term = request.GET.get("term")
     
-    loots = Term.objects.filter(englishVersion = term)
+    loots = Term.objects.filter(englishVersion__icontains = term)
     if not loots:
-        loots = Term.objects.filter(czechVersion = term)
+        loots = Term.objects.filter(czechVersion__icontains = term)
 
     
     context["loots"] = loots
