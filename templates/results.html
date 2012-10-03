@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-
+{% include "i18n" %}
 
 {% block title %}{{title}}{% endblock %}
 
@@ -9,20 +9,20 @@
 		<div class="definition">
 		<h1>{{loot}}:</h1>
 	
-		means: {{loot.czechVersion}} <br>
+		{% trans "Meaning" %} {{loot.czechVersion}} <br>
 	
 		{% if loot.tags.all %}
-			Tags: 
+			{% trans "Tags" %} 
 			{% for tag in loot.tags.all %}
 				<a href="/kvintang/tag/{{ tag.id }}">{{tag}}</a> 
 			{% endfor %} <br>
 		{% endif %}
 	
-		Subject: <a href="/kvintang/subject/{{ loot.subject.id }}"> {{loot.subject}}</a><br>
+		{% trans "Subject" %} <a href="/kvintang/subject/{{ loot.subject.id }}"> {{loot.subject}}</a><br>
 	
 	
 		{% if loot.description %}
-			Notes: {{loot.description}}
+			{% trans "Notes" %} {{loot.description}}
 		{% endif %}
 		
 		</div>	
