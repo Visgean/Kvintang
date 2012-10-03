@@ -9,16 +9,16 @@
 		<div class="definition">
 		<h1>{{loot}}:</h1>
 	
-		{% trans "Meaning" %} {{loot.czechVersion}} <br>
+		{% trans "Meaning" %}: {{loot.czechVersion}} <br>
 	
 		{% if loot.tags.all %}
-			{% trans "Tags" %} 
+			{% trans "Tags" %}:
 			{% for tag in loot.tags.all %}
 				<a href="/kvintang/tag/{{ tag.id }}">{{tag}}</a> 
 			{% endfor %} <br>
 		{% endif %}
 	
-		{% trans "Subject" %} <a href="/kvintang/subject/{{ loot.subject.id }}"> {{loot.subject}}</a><br>
+		{% trans "Subject" %}: <a href="/kvintang/subject/{{ loot.subject.id }}"> {{loot.subject}}</a><br>
 	
 	
 		{% if loot.description %}
